@@ -1,17 +1,32 @@
 
-# HW3 EE538 - Computing Principles for Electrical Engineers
+# HW6 EE538 - Computing Principles for Electrical Engineers
 
 - Please clone the repository, edit [README.md](README.md) to answer questions, and fill up functions to finish the hw.
 - For non-coding questions, you will find **Answer** below each question. Please write your answer there.
 - For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests).
 - For submission, please push your answers to Github before the deadline.
-- Deadline: Tuesday, October 5th, at 11:59 PM (PDT)
+- Deadline: Monday, November 29th, at 11:59 PM (PDT)
 - Total: 120 points. 100 points is considered full credit.
 - **No late acceptance will be accepted for this assignment since the solutions will be provided right after the deadline.**
 
 ## Question 1 (10 Points. Easy)
 
-Please describe circumstances when each option is preferred:
+Suppose we have the following map from a digit (represented as a character) to a set of characters:  
+
+```
+std::map<char, std::set<char>> m = {
+   {'0', {'a', 'b'}},
+   {'1', {'d', 'f'}},
+   {'2', {'g', 'h'}},
+   {'3', {'j', 'k'}},
+   {'4', {'m', 'n'}},
+   {'5', {'p', 'q'}},
+   {'6', {'t', 'u'}},
+   {'7', {'w', 'x'}},
+   {'8', {'!', '?'}},
+   {'9', {'*', '#'}},
+ };
+```
 
 - Passing parameters by value
 - Passing parameters by pointer
