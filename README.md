@@ -28,12 +28,17 @@ std::map<char, std::set<char>> m = {
  };
 ```
 
-- Passing parameters by value
-- Passing parameters by pointer
-- Passing parameters by reference
-- Passing parameters by const reference
+1. Return a vector of all possible strings that a given string of digits in can represent.
+2. What is the worst case runtime and why?
 
-Answer:
+Example1:
+in: "34"
+out: { "jm", "jn", "km", "kn" }
+
+
+Example2:
+in: "345"
+out: { "jmp", "jmq", "jnp", "jnq", "kmp", "kmq", "knp", "knq" }
 
 ## Question 2 (10 Points. Easy)
 
