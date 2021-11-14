@@ -31,8 +31,6 @@ std::map<char, std::set<char>> m = {
 1. Return a vector of all possible strings that a given string of digits in can represent.
 2. What is the worst case runtime and why?
 
-**Answer:**
-
 **Example1:**
 in: "34"
 out: { "jm", "jn", "km", "kn" }
@@ -41,6 +39,8 @@ out: { "jm", "jn", "km", "kn" }
 **Example2:**
 in: "345"
 out: { "jmp", "jmq", "jnp", "jnq", "kmp", "kmq", "knp", "knq" }
+
+**Answer:**
 
 ## Question 2 (10 Points. Easy)
 
@@ -94,6 +94,8 @@ static void TSPWithGas_aux(std::vector<std::vector<int>> &weights,
 2. For all the given parameters of TSPWithGas_aux, please explain why each of them is passed by a reference or by value. What is the justification for each choice?
 3. Implement the body of each function.
 4. Write some unit tests.
+
+**Answer:**
 
 **Make sure you pass the following tests.**
 
