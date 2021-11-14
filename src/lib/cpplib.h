@@ -9,55 +9,34 @@
 #include <iostream>
 
 class CPPLib {
+ private:
+      std::map<char, std::set<char>> m = {
+        {'0', {'a', 'b'}},
+        {'1', {'d', 'f'}},
+        {'2', {'g', 'h'}},
+        {'3', {'j', 'k'}},
+        {'4', {'m', 'n'}},
+        {'5', {'p', 'q'}},
+        {'6', {'t', 'u'}},
+        {'7', {'w', 'x'}},
+        {'8', {'!', '?'}},
+        {'9', {'*', '#'}},
+      };
+ 
  public:
-  //q3
+      //q1
+      std::vector<std::string> GetAllStrings(std::string &digits);
 
-  //q5
-  void mergeArray(std::vector<int>& input1, int m, std::vector<int>& input2, int n);
-  //q8
-  bool CheckValidExpression(const std::string& a);
+      //q2
+
+      static int TSPWithGas(std::vector<std::vector<int>> &weights,
+                          std::vector<int> &gas, int start);
+
+      static void TSPWithGas_aux(std::vector<std::vector<int>> &weights,
+                                std::vector<int> &gas, int start, int cur_node,
+                                std::vector<int> &cur_path, int cur_cost,
+                                int cur_gas, int &min_cost,
+                                std::vector<int> &min_path);
 };
-
-
-// q6
-class MyString
-{
-private:
-    char* data_;
-    int size_;
-public:
-    MyString();
-    ~MyString();
-    MyString(const MyString&);
-    void push_back(char);
-    void pop_back();
-    int size();
-    char* data();
-    bool empty();
-};
-
-struct ListNode {
-  int val;
-  ListNode *next;
-  ListNode(int x) : val(x), next(nullptr) {}
-};
-
-
-
-class SinglyLinkedList {
-public:
-  SinglyLinkedList() { head_ = nullptr; }
-  bool empty();
-  int size();
-  void push_back(int i);
-  void pop_back();
-  int back();
-  ListNode *GetBackPointer();
-  ListNode *GetIthPointer(int i);
-  void print();
-
-  ListNode *head_;
-};
-
 
 #endif

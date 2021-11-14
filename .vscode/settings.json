@@ -81,7 +81,8 @@
     "hash_set": "cpp",
     "future": "cpp",
     "forward_list": "cpp",
-    "queue": "cpp"
+    "queue": "cpp",
+    "clocale": "cpp"
   },
   "lldb.displayFormat": "auto",
   "lldb.dereferencePointers": true,
