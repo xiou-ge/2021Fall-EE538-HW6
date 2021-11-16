@@ -113,16 +113,16 @@ TEST(TSPWithGasTest, TSP) {
    };
    // { 0, 2, 1, 3 }
    gas = {1000, 1000, 1000, 1000};
-   EXPECT_EQ(95, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(95, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {1, 1, 1, 1};
-   EXPECT_EQ(INT_MAX, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(INT_MAX, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {95, 0, 0, 0};
-   EXPECT_EQ(95, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(95, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {20, 10, 30, 35};
-   EXPECT_EQ(95, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(95, CPPLib::TSPWithGas(weights, gas, 0));
  }
  
  {
@@ -135,12 +135,12 @@ TEST(TSPWithGasTest, TSP) {
  
    // { 0, 1, 2, 3 }
    gas = {135, 0, 0, 0};
-   EXPECT_EQ(135, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(135, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {40, 100, 0, 0};
-   EXPECT_EQ(135, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(135, CPPLib::TSPWithGas(weights, gas, 0));
    gas = {40, 39};
-   EXPECT_EQ(INT_MAX, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(INT_MAX, CPPLib::TSPWithGas(weights, gas, 0));
  }
  
  {
@@ -152,13 +152,13 @@ TEST(TSPWithGasTest, TSP) {
  
    };
    gas = {1000, 1000, 1000, 1000};
-   EXPECT_EQ(97, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(97, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {97, 0, 0, 0};
-   EXPECT_EQ(97, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(97, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {42, 42, 13, 0};
-   EXPECT_EQ(97, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(97, CPPLib::TSPWithGas(weights, gas, 0));
  }
  
  {
@@ -170,16 +170,16 @@ TEST(TSPWithGasTest, TSP) {
  
    };
    gas = {1000, 1000, 1000, 1000};
-      EXPECT_EQ(80, TSPWithGas(weights, gas, 0));
+      EXPECT_EQ(80, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {79, 1, 0, 0};
-   EXPECT_EQ(80, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(80, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {78, 1, 0, 1};
-   EXPECT_EQ(80, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(80, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {76, 1, 1, 2};
-   EXPECT_EQ(80, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(80, CPPLib::TSPWithGas(weights, gas, 0));
  }
  
  {
@@ -190,10 +190,10 @@ TEST(TSPWithGasTest, TSP) {
  
    };
    gas = {10, 9, 15};
-   EXPECT_EQ(34, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(34, CPPLib::TSPWithGas(weights, gas, 0));
  
    gas = {9, 10, 15};
-   EXPECT_EQ(INT_MAX, TSPWithGas(weights, gas, 0));
+   EXPECT_EQ(INT_MAX, CPPLib::TSPWithGas(weights, gas, 0));
  }
 }
 
