@@ -13,7 +13,7 @@
 
 Suppose we have the following map from a digit (represented as a character) to a set of characters:  
 
-```
+```cpp
 std::map<char, std::set<char>> m = {
    {'0', {'a', 'b'}},
    {'1', {'d', 'f'}},
@@ -80,7 +80,7 @@ Output: INT_MAX (infinity): We won’t have enough gas to move from the start po
 
 The signature of the functions that you are implementing are give to you:
 
-```
+```cpp
 static int TSPWithGas(std::vector<std::vector<int>> &weights,
                        std::vector<int> &gas, int start);
 static void TSPWithGas_aux(std::vector<std::vector<int>> &weights,
@@ -99,7 +99,7 @@ static void TSPWithGas_aux(std::vector<std::vector<int>> &weights,
 
 **Make sure you pass the following tests.**
 
-```
+```cpp
 TEST(TSPWithGasTest, TSP) {
  std::vector<std::vector<int>> weights;
  std::vector<int> gas;
