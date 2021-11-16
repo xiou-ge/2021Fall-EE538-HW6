@@ -9,7 +9,7 @@
 - Total: 120 points. 100 points is considered full credit.
 - **No late acceptance will be accepted for this assignment since the solutions will be provided right after the deadline.**
 
-## Question 1 (10 Points. Easy)
+## Question 1 (60 Points. Easy)
 
 Suppose we have the following map from a digit (represented as a character) to a set of characters:  
 
@@ -42,7 +42,7 @@ out: { "jmp", "jmq", "jnp", "jnq", "kmp", "kmq", "knp", "knq" }
 
 **Answer:**
 
-## Question 2 (10 Points. Easy)
+## Question 2 (60 Points. Easy)
 
 In this question we add one more constraint to the TSP problem (Traveling salesperson): We assign a gas value to each city. For each two cities i, j, you can only move from i to j if:
 
